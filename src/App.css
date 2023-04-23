@@ -1,0 +1,498 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* navbar */
+.navbar {
+    background-color: transparent;
+    transition: all;
+    transition-duration: 900ms;
+  }
+  .navbar.active {
+    background-color: rgba(22, 22, 23, .8);
+    color: #ffffff;
+  }
+  .navbar-brand {
+    margin-left: 30px;
+    color:black;
+    font: bold;
+    font-size: 22px;
+    text-align: center;
+  }
+  .logodesign{
+    background-color: whitesmoke;
+    color:black;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .navbar-brand:hover {
+    color:white;
+    transition: all;
+    transition-duration: 900ms;
+  }
+  .navbar .navbar-collapse {
+    margin-right: 20%;
+  }
+  .navbar .navbar-collapse .nav-item {
+    padding: 0% 36px 0 0;
+  }
+  .navbar .navbar-collapse .nav-item .nav-link {
+    color: rgb(255, 253, 253);
+    font-weight: 500;
+    font-size: 20px;
+    transition: all;
+    transition-duration:1000ms;
+    scale: 1;
+  }
+  .navbar .navbar-collapse .nav-item .nav-link:hover {
+    color:white;
+    text-shadow: 2px 2px 6px gray;
+    font-weight: bold;
+  }
+  @media (min-width : 300px) and (max-width:600px) {
+    .navbar-brand {
+      margin-top: 3px;
+      margin-left: 3px;
+      font-weight: bold;
+      color:white;
+      font-size: 32px;
+      text-align: center;
+    }
+    .navbar>.containe {
+      display: block;
+      margin: 0;
+    }
+    .navbar .navbar-collapse .nav-item {
+      height: 30px;
+      width: 170px;
+      margin: auto;
+      text-align: center;
+      border-radius: 13rem;
+    }
+    .navbar .navbar-collapse {
+      margin-right: 0%;
+      background: rgba(22, 22, 23, .8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.426);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(35, 35, 35, 0.3);
+    z-index: 2000;
+  }
+  .navbar .navbar-collapse .nav-item .nav-link {
+      color: white;
+      font-size: 16px;
+    }
+    #carousel-inner #carousel-item #img {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  /* navbar end */
+  
+/* img */
+.imgBox {
+    padding: 80px 20px 20px 20px;
+    background-color: rgb(40, 172, 254);
+}
+.imgBox .photoss {
+    padding: 10px 30px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius:  1.5rem  1.5rem  0rem 0rem;
+}
+.imgBox .photoss .boxx {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.imgBox .photoss .boxx .container{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.imgBox .photoss .boxx .container:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781);
+    z-index: 1000;
+    }
+.imgBox .photoss .boxx .container h5{
+   text-align: center;
+   font-size: 1rem;
+   padding: 89px 50px 0px 50px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+ .imgBox .photoss .boxx {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+    }
+    .imgBox .photoss .boxx .container h5{
+      text-align: center;
+      font-size: .6rem;
+      padding: 20px;
+    }
+  }
+
+  /* landingPage css */
+.topHeader{
+    height: 55rem;
+    background: url("./img/bg1.jpg");
+    background-color: black;
+    background-size: cover;
+}
+.name{
+   padding-top: 14rem;
+   padding-left: 14rem;
+    color:white;
+    z-index: 20;
+    font-size: 3.5rem;
+    text-shadow: 4px 5px 12px gray;
+    font-family: 'Russo One', sans-serif; 
+    text-align: center;
+    animation: designname 10s infinite;
+}
+.design{
+  background:whitesmoke;
+  color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  animation: designname 10s ease-in-out infinite;
+  transition: all;
+  transition-duration: 900ms;
+}
+.dreams{
+  margin-top: -0.9rem;
+  padding-left: 23rem;
+  letter-spacing: 0.17rem;
+  color: rgb(61, 60, 60);
+  font-size:2rem;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .description{
+    color:black;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 90px;
+    font-weight: bold;
+}
+/* image slider  */
+
+.img-slidder{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  box-shadow: 2px 2px 30px black;
+  margin-bottom: 70px;
+  margin-top: 10rem;
+}
+
+/* landingPage end */
+
+/* choose page */
+.secComponent{
+  overflow-x: hidden;
+  margin-bottom: 4rem;
+}
+.chooseitem .headingChoose h1{
+    text-align: center;
+    margin: 60px 0;
+    font-size: 3rem;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chooseitem{
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+}
+.card{
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all;
+    transition-duration: 900ms;
+    margin-bottom: 2rem;
+}
+
+.card:hover{
+background-color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.483);
+scale: 1;
+}
+.secComponent{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.secComponent .firstDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+.heading{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.paragraph{
+    text-align: center;
+    width: 25rem;
+    font-size: larger;
+}
+/* choose end */
+
+/* footer */
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.logo{
+    width: 10rem;
+    margin: 4rem;
+}
+.logoset{
+    width: 29rem;
+    text-align: center;
+}
+.logoname{
+    color:whitesmoke;
+    font: bold;
+    font-size: 22px;
+}
+.footerlogo{
+  background-color:white;
+  color: black;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.logoDescription{
+  padding-left: 3rem;
+  word-spacing: -0.1rem;
+  font-size: small;
+  color: rgb(173, 170, 170);
+}
+.footersec{
+    display: grid;
+    grid-template-columns: repeat(2,400px 400px);
+    padding-left: 6rem;
+}
+.part1{
+    padding-left: 1rem;
+}
+.mainhead{
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+    display: flex;
+}
+.insta{
+  width: 3rem;
+}
+.contlogo{
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+
+}
+#subtopic{
+    color: white;
+    padding-top: 0.3rem;
+    transition: all;
+    transition-duration: 900ms;
+    scale: 1;
+}
+#subtopic:hover {
+    cursor: pointer;
+    scale: 1.01;
+    z-index: 1000;
+}
+
+@media (min-width: 600px) and (max-width: 1202px) {
+  .name{
+    margin-top: -9rem;
+    margin-left: -10rem;
+    font-size: 3rem;
+  }
+  .topHeader{
+}
+.description{
+  font-size: x-large;
+}
+.img-slidder{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  box-shadow: 2px 9px 49px black;
+  margin-bottom: 70px;
+  margin-top: 10rem;
+}
+.secComponent .firstDiv{
+  display: grid;
+  grid-template-columns: repeat(1, 90%);
+  gap: 30px;
+}
+.card{
+  height: 15rem;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all;
+  transition-duration: 900ms;
+}
+.heading{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 500;
+  font-weight: 900;
+}
+.contlogo{
+
+}
+.paragraph{
+  text-align: center;
+  width: 25rem;
+  font-size:x-large;
+  font-weight: bold;
+}
+.chooseitem .headingChoose h1{
+  text-align: center;
+  margin: 60px 0;
+  font-size: 4rem;
+}
+.footersec{
+  margin-left: -5rem;
+  grid-template-columns: repeat(1,20rem);
+}
+.logoset{
+  font-size: x-large;
+}
+#subtopic{
+  font-size: large;
+}
+.part1{
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .name{
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .dreams{
+    margin-top: -0.7rem;
+    color: rgb(123, 121, 121);
+    font-size:2.6rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px 8px rgb(0, 0, 0);
+  }
+  .topHeader{
+    height: 20rem;
+}
+.description{
+  color:black;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 30px;
+  font: bold;
+}
+.img-slidder{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 2px 9px 39px black;
+  margin-bottom: 50px;
+  margin-top: 5rem;
+}
+.secComponent .firstDiv{
+  display: grid;
+  grid-template-columns: repeat(1,2fr);
+  gap: 45px;
+}
+.card{
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  border: none;
+  transition: all;
+  transition-duration: 900ms;
+}
+.heading{
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-weight: 900;
+}
+.paragraph{
+  text-align: center;
+  width: 100%;
+  height:12rem;
+  font-size:x-large;
+  font-weight: bold;
+}
+.chooseitem .headingChoose h1{
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgb(147, 146, 146);
+}
+.footer{
+  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(1,400px);
+  padding-bottom: 1rem;
+}
+.logo{
+  width: 1rem;
+}
+.logoset{
+  margin-left: -2rem;
+  text-align: center;
+}
+.logoname{
+  color: white;
+  font-weight: 700;
+  font-size: x-large;
+  text-align: center;
+  font: bold;
+  font-size: 22px;
+}
+.footerlogo{
+background-color:white;
+color: black;
+}
+.logoDescription{
+  text-align: center;
+  font-size:13px;
+  color: rgb(173, 170, 170);
+}
+.footersec{
+  margin-top: -14rem;
+  grid-template-columns: repeat(1,400px);
+}
+.part1{
+  margin-top: 1rem;
+  padding-bottom:1rem ;
+  padding-left: 1rem;
+}
+.navbar-brand{
+  font-size: small;
+}
+}
